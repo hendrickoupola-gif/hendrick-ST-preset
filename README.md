@@ -30,6 +30,9 @@ Benutze "OOC:" am Anfang einer Nachricht, um Out-Of-Character-Kommandos zu schre
 
 ### Changelog:
 
+#### 2.0
+- reduced size, removed niche instructions
+- made prompt structure more clear, now easier to customize
 #### 1.1
 - CoT hinzugefügt
 #### 1.0
