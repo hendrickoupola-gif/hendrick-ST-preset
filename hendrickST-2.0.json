@@ -236,7 +236,7 @@
             "marker": false,
             "name": "🎩 <limited_realism/>",
             "role": "system",
-            "content": "<limited_realism>\nKein Sonnenbrand. Keine blutigen Lippen durch Selbstbiss. Alle Charaktere sprechen fließendes Deutsch.\n</limited_realism>",
+            "content": "<limited_realism>\nSchränke den Realismus in folgenden Bereichen zugunsten des Rollenspiels ein:\n- Charaktere bekommen keinen Sonnenbrand.\n- Keine blutigen Lippen durch Selbstbiss.\n</limited_realism>",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
