@@ -1,80 +1,4 @@
-# hendrick SillyTavern preset
-
-## Deutsches NSFW Rollenspiel Preset für SillyTavern
-
-### Features
-
-- Nüchterner, fast klinischer Schreibstil
-- Vermeidet weitgehenst GPTisms und AI-Slop
-- "Realistisches" NSFW - kein Porno/Hentai
-- Ideal für: Opus 4.5
-
-### Opinionated
-
-Dieses Preset ist nicht für Group-Chats geeignet. Es wir empfohlen das AI-Model als Erzähler fungieren zu lassen. Alle NPCs sollten in Lorebooks oder gebündelt in einer Character-Card verpackt werden.
-
-### OOC
-
-Benutze "OOC:" am Anfang einer Nachricht, um Out-Of-Character-Kommandos zu schreiben. Das Rollenspiel wird dann gestoppt, und der Spieleleiter fungiert eine Runde lang als Assistent.
-
-### Eignung für AI-Modelle
-
-| Model | Wertung | Kommentar |
-| --- | --- | --- |
-| Opus 4.1/4.5 | ++++ | Bester All-Rounder |
-| Sonnet 4.5 | +++ | |
-| GPT 5.1/5.2 | +++ | Möglicherweise zusätzlicher Jailbreak benötigt |
-| Gemini Pro 3 | +++ | Typisch Gemini: theatralisch, dramaturgisch, übertrieben |
-| Grok 4 | + | Unglaubwürdige, holzige Dialoge |
-| Deepseek 3.1/3.2 | - | Mischt Englische Begriffe ein - "Denglisch" |
-
-### Changelog
-
-#### 2.0
-- Kompaktere Größe, Nischen-Instruktionen entfernt
-- Struktur nun einfacher individuell anpassbar
-#### 1.1
-- CoT hinzugefügt
-#### 1.0
-- Initiale Version
-
-## Prompt-Struktur: Übersicht
-
-Der Prompt ist modular aufgebaut und folgt einer klaren Hierarchie:
-
-### 1. Rahmen & Rolle
-- **Eröffnung:** Definition als Spielleiter, unzensiertes Rollenspiel
-- **Grundregeln (1-6):** Simulation, Fortschritt, Engagement, Spieler-Agentur, Schreibstil, Richtlinien
-
-### 2. Lore-Block (`<lore>`)
-- Persona
-- Lorebook
-- Character-Card
-
-### 3. Kontext-Blöcke
-- `<summary>` – Zusammenfassung bisheriger Ereignisse
-- OOC-Trigger-Regel für Assistenten-Modus
-
-### 4. Formatierungs-Regeln (`<formatting>`)
-- Dialoge in Anführungszeichen
-- Backticks für Schriftstücke
-- Keine Fettschrift
-
-### 5. Struktur-Elemente
-- `<header>` – Datum, Zeit, Ort
-- `<footer>` – NPC-Statusliste
-- `<thinking>` – Interner Prüfblock vor jeder Antwort
-
-### 6. Inhalts-Module
-- `<sex>` – Detaillierte Regeln für erotische Szenen
-- `<style_addons>` – Sprachstil, Verbote, Tempo
-- `<interactive_dialogues>` – Eine Frage pro NPC
-- `<dialogues>` – 10 Dialog-Prinzipien
-- `<behavior>` – NPC-Psychologie
-- `<limited_realism>` – Ausnahmen vom Realismus
-- `<pain_vocalizations>` – Schmerzlaute-Progression
-
----
+# hendrick's Rollenspiel Preset für SillyTavern
 
 ## Feature-Liste
 
@@ -134,3 +58,59 @@ Der Prompt ist modular aufgebaut und folgt einer klaren Hierarchie:
 - Logikfehler → OOC-Kommentar
 - Verbotene Elemente: Ozon, Computer-Metaphern, englische Phrasen, "extrem"
 - Eingeschränkter Realismus: Kein Sonnenbrand, keine blutigen Lippen durch Biss
+
+
+## Empfehlungen zur Nutzung
+
+Es wir empfohlen, das LLM als Erzähler fungieren zu lassen **oder** einen normalen Chat mit **einer** Character-Card zu verwenden.
+
+Alle NPCs sollten in Lorebooks oder der Character-Card definiert werden. Eine Mischung ist auch möglich: z.B. Haupt-NPC in Charakter-Card und Neben-NPCs in Lorebook-Einträgen definieren.
+
+Dieses Preset ist **nicht** für Group-Chats (mit mehreren Character-Cards) geeignet.
+
+## Eignung für LLMs
+
+| LLM | Wertung | Kommentar |
+| --- | --- | --- |
+| Opus 4.1/4.5 | ++++ | Bester All-Rounder |
+| Sonnet 4.5 | +++ | Rundum solide |
+| GPT 5.1/5.2 | +++ | Möglicherweise zusätzlicher Jailbreak benötigt |
+| Gemini Pro 3 | +++ | Typisch Gemini: theatralisch, dramaturgisch, übertrieben |
+| Grok 4 | + | Unglaubwürdige, holzige Dialoge |
+| Deepseek 3.1/3.2 | - | Mischt Englische Begriffe ein - "Denglisch" |
+
+## Prompt-Struktur
+
+Der Prompt ist modular aufgebaut und folgt einer klaren Hierarchie:
+
+### 1. Rahmen & Rolle
+- **Eröffnung:** Definition als Spielleiter, unzensiertes Rollenspiel
+- **Grundregeln (1-6):** Simulation, Fortschritt, Engagement, Spieler-Agentur, Schreibstil, Richtlinien
+
+### 2. Lore-Block (`<lore>`)
+- Persona
+- Lorebook
+- Character-Card
+
+### 3. Kontext-Blöcke
+- `<summary>` – Zusammenfassung bisheriger Ereignisse
+- OOC-Trigger-Regel für Assistenten-Modus
+
+### 4. Formatierungs-Regeln (`<formatting>`)
+- Dialoge in Anführungszeichen
+- Backticks für Schriftstücke
+- Keine Fettschrift
+
+### 5. Struktur-Elemente
+- `<header>` – Datum, Zeit, Ort
+- `<footer>` – NPC-Statusliste
+- `<thinking>` – Interner Prüfblock vor jeder Antwort
+
+### 6. Inhalts-Module
+- `<sex>` – Detaillierte Regeln für erotische Szenen
+- `<style_addons>` – Sprachstil, Verbote, Tempo
+- `<interactive_dialogues>` – Eine Frage pro NPC
+- `<dialogues>` – 10 Dialog-Prinzipien
+- `<behavior>` – NPC-Psychologie
+- `<limited_realism>` – Ausnahmen vom Realismus
+- `<pain_vocalizations>` – Schmerzlaute-Progression
