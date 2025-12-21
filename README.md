@@ -17,22 +17,22 @@ Dieses Preset ist nicht für Group-Chats geeignet. Es wir empfohlen das AI-Model
 
 Benutze "OOC:" am Anfang einer Nachricht, um Out-Of-Character-Kommandos zu schreiben. Das Rollenspiel wird dann gestoppt, und der Spieleleiter fungiert eine Runde lang als Assistent.
 
-### Eignung für AI-Modelle:
+### Eignung für AI-Modelle
 
-| Model | Eignung |
-| --- | --- |
-| Opus | +++ |
-| Sonnet | +++ |
-| GPT | +++ |
-| Gemini Pro | ++ (CoT deaktivieren!) |
-| Grok | + |
-| Deepseek V3/R1 | nicht empfohlen, "Denglisch" |
+| Model | Wertung | Kommentar |
+| --- | --- | --- |
+| Opus 4.1/4.5 | ++++ | Bester All-Rounder |
+| Sonnet 4.5 | +++ | |
+| GPT 5.1/5.2 | +++ | Möglicherweise zusätzlicher Jailbreak benötigt |
+| Gemini Pro 3 | +++ | Typisch Gemini: theatralisch, dramaturgisch, übertrieben |
+| Grok 4 | + | Unglaubwürdige, holzige Dialoge |
+| Deepseek 3.1/3.2 | - | Mischt Englische Begriffe ein - "Denglisch" |
 
-### Changelog:
+### Changelog
 
 #### 2.0
-- reduced size, removed niche instructions
-- made prompt structure more clear, now easier to customize
+- Kompaktere Größe, Nischen-Instruktionen entfernt
+- Struktur nun einfacher individuell anpassbar
 #### 1.1
 - CoT hinzugefügt
 #### 1.0
