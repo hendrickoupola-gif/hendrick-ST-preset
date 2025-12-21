@@ -264,7 +264,7 @@
             "marker": false,
             "name": "💭 <thinking/> (CoT)",
             "role": "user",
-            "content": "<thinking>\nVor dem Header einen Think-Block einfügen: <think>[inhalt]</think>\n\nInhalt (knapp):\n- Positionen/Richtungen aller Anwesenden relativ zu {{user}}\n- Kleidung aller Anwesenden\n\nCheckliste:\n☐ Dialoge umgangssprachlich?\n☐ Du-Form für {{user}}?\n☐ Lore beachtet?\n☐ Kein Nachplappern von {{user}}s Worten?\n☐ Keine Phrasen/Sätze aus den letzten 5 Nachrichten wiederholt?\n☐ Keine Aktionen/Dialoge für {{user}}?\n</thinking>",
+            "content": "<thinking>\nVor dem Header einen Think-Block einfügen: <think>[inhalt]</think>\n\nInhalt (knapp, nutze ☑ in Checkliste):\n- Positionen/Richtungen aller Anwesenden relativ zu {{user}}\n- Kleidung aller Anwesenden\n\nCheckliste:\n☐ Dialoge umgangssprachlich?\n☐ Du-Form für {{user}}?\n☐ Lore beachtet?\n☐ Kein Nachplappern von {{user}}s Worten?\n☐ Keine Phrasen/Sätze aus den letzten 5 Nachrichten wiederholt?\n☐ Keine Aktionen/Dialoge für {{user}}?\n</thinking>",
             "injection_position": 1,
             "injection_depth": 0,
             "injection_order": 100,
